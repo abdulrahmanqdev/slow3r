@@ -1,10 +1,12 @@
 <div align="center">
 
-# 🐢 slow3r
+# 🌐 slow3r
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
 </p>
 
 <p align="center">
@@ -14,8 +16,14 @@
 </p>
 
 <p align="center">
-  <strong>İstek hızını kontrol altına alan hafif bir rate limiter / throttle aracı.</strong><br/>
-  API çağrılarını, görevleri veya herhangi bir işlemi kolayca yavaşlat ve yönet.
+  <strong>Kişisel portfolio ve tanıtım web sitesi.</strong><br/>
+  Hakkında, projeler ve referanslar sayfalarından oluşan modern bir Next.js uygulaması.
+</p>
+
+<p align="center">
+  <a href="https://slow3rxq.vercel.app">
+    <img src="https://img.shields.io/badge/🌍 Canlı Site-slow3rxq.vercel.app-blue?style=for-the-badge"/>
+  </a>
 </p>
 
 </div>
@@ -24,17 +32,19 @@
 
 ## 📖 Genel Bakış
 
-**slow3r**, aşırı yüklemeyi önlemek için istek ve işlem hızını kontrol eden minimalist bir araçtır. API rate limit hatalarıyla boğuşmadan işlemlerini güvenli bir şekilde yönetmeni sağlar.
+**slow3r**, Next.js App Router ile geliştirilmiş kişisel bir portfolio sitesidir. Hakkında, projeler ve referanslar sayfaları ile ziyaretçilere kapsamlı bir tanıtım sunar.
 
 ---
 
 ## ✨ Özellikler
 
-- ⏱️ Özelleştirilebilir gecikme süresi
-- 🔁 Toplu işlem desteği
-- 🪶 Sıfır bağımlılık, ultra hafif
-- 🔧 Basit ve anlaşılır API
-- ✅ Promise tabanlı async/await desteği
+- 👤 Hakkında sayfası — kişisel tanıtım
+- 🗂️ Projeler sayfası — yapılan çalışmalar
+- 💬 Referanslar sayfası — referans listesi
+- 🧭 Navbar bileşeni ile kolay navigasyon
+- 🎨 Tailwind CSS ile modern ve responsive tasarım
+- ⚡ Next.js App Router ile hızlı sayfa geçişleri
+- 🚀 Vercel üzerinde canlıya alınmış
 
 ---
 
@@ -42,27 +52,64 @@
 
 | Teknoloji | Amaç |
 |---|---|
+| Next.js (App Router) | Framework |
 | JavaScript | Dil |
-| Node.js | Çalışma Ortamı |
+| Tailwind CSS | Stillendirme |
+| Vercel | Deployment |
 
 ---
 
 ## 🚀 Başlarken
 
+### Gereksinimler
+- Node.js `>= 18.x`
+
+### Kurulum
+
 ```bash
 git clone https://github.com/abdulrahmanqdev/slow3r.git
 cd slow3r
 npm install
+npm run dev
 ```
 
-### Kullanım
+Tarayıcında [http://localhost:3000](http://localhost:3000) adresini aç.
 
-```js
-import { slow3r } from './slow3r';
+---
 
-// Her istekte 500ms gecikme
-await slow3r(islemListesi, 500);
+## 📁 Proje Yapısı
+
 ```
+slow3r/
+├── public/                          # Statik dosyalar
+├── src/
+│   └── app/
+│       ├── about/
+│       │   └── page.jsx             # Hakkında sayfası
+│       ├── components/
+│       │   └── navbar.jsx           # Navigasyon bileşeni
+│       ├── projects/
+│       │   └── page.jsx             # Projeler sayfası
+│       ├── referans/
+│       │   ├── page.jsx             # Referanslar sayfası
+│       │   └── referansList.js      # Referans listesi verisi
+│       ├── favicon.ico
+│       ├── globals.css
+│       ├── layout.js                # Root layout
+│       └── page.js                  # Ana sayfa
+├── jsconfig.json
+├── next.config.mjs
+├── tailwind.config.js
+├── postcss.config.mjs
+├── package.json
+└── LICENSE
+```
+
+---
+
+## 🌍 Canlı Site
+
+👉 [slow3rxq.vercel.app](https://slow3rxq.vercel.app)
 
 ---
 
