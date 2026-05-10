@@ -32,7 +32,7 @@
 
 ## 📖 Genel Bakış
 
-**slow3r**, Next.js App Router ile geliştirilmiş kişisel bir portfolio sitesidir. Hakkında, projeler ve referanslar sayfaları ile ziyaretçilere kapsamlı bir tanıtım sunar.
+**slow3rxq**, Next.js App Router ile geliştirilmiş kişisel bir portfolio sitesidir. Hakkında, projeler ve referanslar sayfaları ile ziyaretçilere kapsamlı bir tanıtım sunar.
 
 ---
 
@@ -67,7 +67,7 @@
 ### Kurulum
 
 ```bash
-git clone https://github.com/abdulrahmanqdev/slow3r.git
+git clone https://github.com/abdulrahmanqdev/slow3rxq.git
 cd slow3r
 npm install
 npm run dev
@@ -104,12 +104,6 @@ slow3r/
 ├── package.json
 └── LICENSE
 ```
-
----
-
-## 🌍 Canlı Site
-
-👉 [slow3rxq.vercel.app](https://slow3rxq.vercel.app)
 
 ---
 
